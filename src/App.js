@@ -18,6 +18,7 @@ export default function App({ currentUser, nearConfig, wallet }) {
   };
   return (
     <div className="App">
+    <h3>Hello {currentUser?.accountId || "Stranger"}!</h3>
       <Button variant="outline-dark" size="lg" onClick={handleUser}>
         {currentUser ? "Sign Out" : "Login"}
       </Button>
